@@ -12,13 +12,19 @@ const MainContainer = ({children, keywords}) => {
                 <A href={"/"} text={'Главная'}></A>
                 <A href={"/users"} text={'Пользователи'}></A>
             </div>
-            <div>{children}</div>
+            <div className="children">{children}</div>
             <style jsx>
                 {`
                   .navbar {
                     background: orange;
                     padding: 15px;
                     display: flex;
+                  }
+
+                  .children {
+                  margin-top: 20px;
+                  display: flex;
+                  justify-content: center;
                   }
                 `}
             </style>

@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: #525252;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+}
