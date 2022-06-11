@@ -1,23 +1,18 @@
 import A from "../components/A";
+import Head from "next/head";
+import MainContainer from "../components/MainContainer";
+
 
 const Index = () => {
     return (
-        <div>
-            <div className="navbar">
-                <A href={"/"} text={'Главная'}></A>
-                <A href={"/users"} text={'Пользователи'}></A>
-            </div>
-            <h1>Главная страница</h1>
-            <style jsx>
-                {`
-                  .navbar {
-                    background: orange;
-                    padding: 15px;
-                    display: flex;
-                  }
-                `}
-            </style>
-        </div>
+        <>
+            <MainContainer keywords={'main page'}>
+                <div>
+                    <h1>Главная страница</h1>
+                </div>
+            </MainContainer>
+
+        </>
     )
 }
 export default Index
