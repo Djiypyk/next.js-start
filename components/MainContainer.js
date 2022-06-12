@@ -20,6 +20,7 @@ const MainContainer = ({children, keywords}) => {
                     padding: 15px;
                     display: flex;
                   }
+          
 
                   .children {
                   margin-top: 20px;
