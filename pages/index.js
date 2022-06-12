@@ -3,7 +3,7 @@ import Head from "next/head";
 import MainContainer from "../components/MainContainer";
 
 
-const Index = () => {
+const Index = ({img}) => {
     return (
         <>
             <MainContainer

@@ -6,11 +6,11 @@ const Users = ({users}) => {
     return (
         <MainContainer keywords={'users page'}>
             <div className={styles.main}>
-                <h1>Страница пользователей</h1>
+                <h1>Список пользователей</h1>
                 <div>
                     <ul>
                         {users.map(user => {
-                            return <li key={user.id}><Link href={`/users/${user.id}`}>
+                            return <li className={styles.user} key={user.id}><Link href={`/users/${user.id}`}>
                                 <a>{user.name}</a>
                             </Link></li>
                         })}

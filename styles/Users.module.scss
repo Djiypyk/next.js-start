@@ -1,6 +1,12 @@
 .main {
   display: flex;
   flex-direction: column;
+.user{
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
 
   h1 {
     margin-bottom: 20px;
@@ -8,18 +14,19 @@
 
   li {
     list-style-type: none;
-    font-size: 18px;
+
     text-align: center;
     margin-bottom: 5px;
   }
 
   a {
+    font-size: 18px;
     color: black;
   }
 
   a:hover {
-    color: #525252;
+    color: chocolate;
     font-size: 20px;
-    transition: 0.5s;
+    transition: 0.2s;
   }
 }

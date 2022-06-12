@@ -7,8 +7,11 @@ export default function ({user}) {
     return (
         <MainContainer keywords={user.name}>
             <div className={styles.user}>
-                <h1> Пользователь с id {query.id}</h1>
-                <div>Имя пользователя - {user.name}</div>
+                <h1>{user.name}</h1>
+                <p><span>Username:</span> {user.username}</p>
+                <p><span>Email:</span> {user.email}</p>
+                <p><span>User ID:</span> {query.id}</p>
+                <p><span>User Website:</span> {user.website}</p>
             </div>
         </MainContainer>
     )
